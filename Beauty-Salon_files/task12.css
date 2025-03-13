@@ -1,0 +1,233 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: Cursive;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 4.6rem;
+  text-align: center;
+}
+h3 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 300;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+li,
+button,
+input,
+label,
+p {
+  font-size: 2rem;
+}
+button {
+  padding: 1rem 4rem;
+  font-size: 1.8rem;
+  background: purple;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  background: rgb(104, 5, 104);
+}
+
+/* header,nav,hero (section) */
+.main-head {
+  background-color: rgba(75, 0, 105, 0.874);
+  color: aliceblue;
+  position: sticky;
+  top: 0px;
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 40rem;
+}
+ul li {
+  list-style: none;
+}
+#logo {
+  flex: 1 1 40rem;
+  font-family: "Rubik Vinyl", serif;
+}
+/* hero section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+    url("../rasm/beauty.png");
+  height: 90vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: purple;
+  text-shadow: 5px 2px 5px #000;
+}
+.hero h3 {
+  padding: 5rem;
+}
+/* service section  */
+.service-head {
+  padding: 3rem;
+  background: rgba(75, 0, 105, 0.874);
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.service-head h3 {
+  padding: 2rem;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  min-height: 40vh;
+  flex: 1 1 25rem;
+  margin: 2rem 5rem;
+  box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.cards img {
+  width: 78%;
+  margin: 2rem;
+}
+.card h4,
+.card p {
+  padding: 1rem;
+}
+/* contact section */
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIOm-9sZPqOc2GvYGEUsZO_LEeuaE60ZZwg&s");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper {
+  background: rgba(167, 22, 225, 0.322);
+  width: 60%;
+  border-radius: 5px;
+}
+.form-head {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.name-form,
+.email-form {
+  padding: 3rem;
+  text-align: center;
+}
+.form-wrapper label {
+  margin: 0.25rem 3rem;
+}
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+}
+.form-wrapper input {
+  padding: 1rem;
+}
+/* footer */
+footer {
+  background: blueviolet;
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer h5 {
+  flex: 1 1 30rem;
+  color: white;
+}
+footer ul {
+  flex: 1 1 30rem;
+  display: flex;
+  justify-content: space-around;
+}
+.fa-square-youtube{
+    color: red;
+}
+.fa-telegram{
+    color:rgb(0, 170, 255);
+}
+.fa-square-instagram{
+   color: rgb(255, 192, 228);
+}
+
+
+
+/* media query */
+@media screen and (max-width: 940px) {
+  html {
+    font-size: 55%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  footer h5 {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  footer ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer ul li{
+    padding: 1rem;
+  }
+  .form-wrapper{
+    width: 90%;
+  }
+}
